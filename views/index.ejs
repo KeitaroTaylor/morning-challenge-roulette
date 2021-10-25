@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h1>Play Some Roulette</h1>
+        <h2>(because Savage says so)</h2>
+        <img src="img/savage21.jpg" alt="21 Savage Profile Photo">
+
+        <p>Login or Signup as an Admin:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+        <p>Play some roulette!!!</p>
+
+        <form action="/play" method="POST"> 
+            <input type="text" name="bet">
+            <select name="options" id="color-select">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <span>You chose <%= bets[bets.length -1].chose %>.</span>
+        <span>The result was <%= bets[bets.length -1].result %>.</span>
+        <span>You <%= bets[bets.length -1].win %> $<%= bets[bets.length -1].bet %>.</span>
+        <span></span>
+
+    </div>
+
+</div>
+</body>
+</html>

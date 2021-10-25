@@ -1,0 +1,1 @@
+Successfully created a simple roulette game where a logged in user can see the total earnings for the casino.
